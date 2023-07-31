@@ -1,0 +1,343 @@
+// Dart imports:
+import 'dart:async';
+import 'dart:convert' as convert;
+
+// Flutter imports:
+import 'package:flutter/foundation.dart';
+
+// Package imports:
+import 'package:cookie_jar/cookie_jar.dart';
+import 'package:dio/dio.dart' as diox;
+import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
+import 'package:dio_cache_interceptor_hive_store/dio_cache_interceptor_hive_store.dart';
+import 'package:dio_cookie_manager/dio_cookie_manager.dart';
+import 'package:dio_smart_retry/dio_smart_retry.dart';
+import 'package:lotus_application/core/app/constants/constants.dart';
+import 'package:lotus_application/core/app/types/api_method.dart';
+import 'package:lotus_application/core/app/types/status_code.dart';
+import 'package:lotus_application/core/utils/dio_transformer.dart';
+import 'package:lotus_application/core/utils/path_helper.dart';
+import 'package:lotus_application/core/utils/stop_watch_api.dart';
+// import 'package:project_learn_clean_architecture/core/app/constants/constants.dart';
+// import 'package:project_learn_clean_architecture/core/app/types/api_method.dart';
+// import 'package:project_learn_clean_architecture/core/app/types/status_code.dart';
+// import 'package:project_learn_clean_architecture/core/util/dio_transformer.dart';
+// import 'package:project_learn_clean_architecture/core/util/path_helper.dart';
+// import 'package:project_learn_clean_architecture/core/util/stop_watch_api.dart';
+
+class BaseRepostory {
+  static diox.Dio dio = diox.Dio(
+    diox.BaseOptions(
+      baseUrl: serviceBaseEndpoint,
+      connectTimeout: const Duration(milliseconds: connectTimeOut),
+      receiveTimeout: const Duration(milliseconds: receiveTimeOut),
+      sendTimeout: const Duration(milliseconds: receiveTimeOut),
+    ),
+  ); // with default Options
+
+  Future<diox.Response<dynamic>> downloadFile(
+    String url,
+    String path,
+    Function onReceive,
+  ) async {
+    final response = await dio.download(
+      url,
+      path,
+      options: getOptions(),
+      onReceiveProgress: (received, total) {
+        onReceive(received, total);
+      },
+    );
+    return response;
+  }
+
+  Future<diox.Response<dynamic>> postFormData(
+    String gateway,
+    diox.FormData formData,
+  ) async {
+    try {
+      final response = await dio.post(
+        gateway,
+        data: formData,
+        options: getOptions(),
+        onSendProgress: (send, total) {},
+        onReceiveProgress: (received, total) {},
+      );
+
+      return response;
+    } on diox.DioException catch (exception) {
+      return catchDioError(exception: exception, gateway: gateway);
+    }
+  }
+
+  Future<diox.Response<dynamic>> putFormData(
+    String gateway,
+    diox.FormData formData,
+  ) async {
+    try {
+      final response = await dio.put(
+        gateway,
+        data: formData,
+        options: getOptions(),
+        onSendProgress: (send, total) {},
+        onReceiveProgress: (received, total) {},
+      );
+      return response;
+    } on diox.DioException catch (exception) {
+      return catchDioError(exception: exception, gateway: gateway);
+    }
+  }
+
+  Future<diox.Response<dynamic>> postRoute(
+    String gateway,
+    Map<String, dynamic> body, {
+    String? query,
+  }) async {
+    try {
+      final Map<String, String> paramsObject = {};
+      if (query != null) {
+        query.split('&').forEach((element) {
+          paramsObject[element.split('=')[0].toString()] =
+              element.split('=')[1].toString();
+        });
+      }
+      final response = kDebugMode
+          ? await StopWatch.stopWatchApi(
+              () => dio.post(
+                gateway,
+                data: convert.jsonEncode(body),
+                options: getOptions(),
+                queryParameters: query == null ? null : paramsObject,
+              ),
+              ApiMethod.post.methodName,
+              gateway,
+            )
+          : await dio.post(
+              gateway,
+              data: convert.jsonEncode(body),
+              options: getOptions(),
+              queryParameters: query == null ? null : paramsObject,
+            );
+      return response;
+    } on diox.DioException catch (exception) {
+      return catchDioError(exception: exception, gateway: gateway);
+    }
+  }
+
+  Future<diox.Response<dynamic>> putRoute(
+    String gateway,
+    Map<String, dynamic> body,
+  ) async {
+    try {
+      final response = kDebugMode
+          ? await StopWatch.stopWatchApi(
+              () => dio.put(
+                gateway,
+                data: convert.jsonEncode(body),
+                options: getOptions(),
+              ),
+              ApiMethod.put.methodName,
+              gateway,
+            )
+          : await dio.put(
+              gateway,
+              data: convert.jsonEncode(body),
+              options: getOptions(),
+            );
+      return response;
+    } on diox.DioException catch (exception) {
+      return catchDioError(exception: exception, gateway: gateway);
+    }
+  }
+
+  Future<diox.Response<dynamic>> patchRoute(
+    String gateway, {
+    String? query,
+    Map<String, dynamic>? body,
+  }) async {
+    try {
+      final Map<String, String> paramsObject = {};
+      if (query != null) {
+        query.split('&').forEach((element) {
+          paramsObject[element.split('=')[0].toString()] =
+              element.split('=')[1].toString();
+        });
+      }
+
+      final response = kDebugMode
+          ? await StopWatch.stopWatchApi(
+              () => dio.patch(
+                gateway,
+                data: body == null ? null : convert.jsonEncode(body),
+                options: getOptions(),
+                queryParameters: query == null ? null : paramsObject,
+              ),
+              ApiMethod.patch.methodName,
+              gateway,
+            )
+          : await dio.patch(
+              gateway,
+              data: body == null ? null : convert.jsonEncode(body),
+              options: getOptions(),
+              queryParameters: query == null ? null : paramsObject,
+            );
+      return response;
+    } on diox.DioException catch (exception) {
+      return catchDioError(exception: exception, gateway: gateway);
+    }
+  }
+
+  Future<diox.Response<dynamic>> getRoute(
+    String gateway, {
+    String? params,
+    String? query,
+  }) async {
+    try {
+      final Map<String, String> paramsObject = {};
+      if (query != null) {
+        query.split('&').forEach((element) {
+          paramsObject[element.split('=')[0].toString()] =
+              element.split('=')[1].toString();
+        });
+      }
+
+      final response = kDebugMode
+          ? await StopWatch.stopWatchApi(
+              () => dio.get(
+                gateway,
+                options: getOptions(),
+                queryParameters: query == null ? null : paramsObject,
+              ),
+              ApiMethod.get.methodName,
+              gateway,
+            )
+          : await dio.get(
+              gateway,
+              options: getOptions(),
+              queryParameters: query == null ? null : paramsObject,
+            );
+      return response;
+    } on diox.DioException catch (exception) {
+      return catchDioError(exception: exception, gateway: gateway);
+    }
+  }
+
+  Future<diox.Response<dynamic>> deleteRoute(
+    String gateway, {
+    String? params,
+    String? query,
+    Map<String, dynamic>? body,
+    diox.FormData? formData,
+  }) async {
+    try {
+      final Map<String, String> paramsObject = {};
+      if (query != null) {
+        query.split('&').forEach((element) {
+          paramsObject[element.split('=')[0].toString()] =
+              element.split('=')[1].toString();
+        });
+      }
+
+      final response = kDebugMode
+          ? await StopWatch.stopWatchApi(
+              () => dio.delete(
+                gateway,
+                data: formData ??
+                    (body == null ? null : convert.jsonEncode(body)),
+                options: getOptions(),
+                queryParameters: query == null ? null : paramsObject,
+              ),
+              ApiMethod.delete.methodName,
+              gateway,
+            )
+          : await dio.delete(
+              gateway,
+              data:
+                  formData ?? (body == null ? null : convert.jsonEncode(body)),
+              options: getOptions(),
+              queryParameters: query == null ? null : paramsObject,
+            );
+      return response;
+    } on diox.DioException catch (exception) {
+      return catchDioError(exception: exception, gateway: gateway);
+    }
+  }
+
+  diox.Response catchDioError({
+    required diox.DioException exception,
+    required String gateway,
+  }) {
+    return diox.Response(
+      requestOptions: diox.RequestOptions(path: gateway),
+      statusCode: StatusCode.badGateway,
+      statusMessage: "CATCH EXCEPTION DIO",
+    );
+  }
+
+  diox.Options getOptions() {
+    return diox.Options(
+      validateStatus: (status) {
+        // if (status == StatusCode.unauthorized &&
+        //     UserLocal().getAccessToken().isNotEmpty) {
+        //   UserLocal().clearAccessToken();
+        //   showDialogLoading();
+        //   AppBloc.authBloc.add(LogOutEvent());
+        // }
+        return true;
+      },
+      headers: getHeaders(),
+    );
+  }
+
+  getHeaders() {
+    return {
+      'Authorization': 'Bearer ',
+      'Content-Type': 'application/json; charset=UTF-8',
+      'Connection': 'keep-alive',
+      'Accept': '*/*',
+      'Accept-Encoding': 'gzip, deflate, br',
+    };
+  }
+
+  static Future<void> configureDio() async {
+    // Integration cookie
+    final String tempDir = await PathHelper.tempDirStreamOS;
+    final String localHiveDir = await PathHelper.localStoreDirStreamOS;
+    final PersistCookieJar cookieJar = PersistCookieJar(
+      storage: FileStorage(tempDir),
+    );
+    dio.interceptors.add(CookieManager(cookieJar));
+
+    // Integration retry
+    dio.interceptors.add(
+      RetryInterceptor(
+        dio: dio,
+        logPrint: print, // specify log function (optional)
+        retryDelays: const [
+          // set delays between retries (optional)
+          Duration(seconds: 1), // wait 1 sec before first retry
+          Duration(seconds: 2), // wait 2 sec before second retry
+          Duration(seconds: 3), // wait 3 sec before third retry
+        ],
+      ),
+    );
+
+    // Integration cache
+    final CacheOptions cacheOptions = CacheOptions(
+      // A default store is required for interceptor.
+      store: HiveCacheStore(localHiveDir),
+      // Returns a cached response on error but for statuses 401 & 403.
+      // Also allows to return a cached response on network errors (e.g. offline usage).
+      // Defaults to [null].
+      hitCacheOnErrorExcept: [StatusCode.unauthorized, StatusCode.forbiden],
+      // Overrides any HTTP directive to delete entry past this duration.
+      // Useful only when origin server has no cache config or custom behaviour is desired.
+      // Defaults to [null].
+      maxStale: const Duration(milliseconds: connectTimeOut),
+    );
+    dio.interceptors.add(DioCacheInterceptor(options: cacheOptions));
+
+    // Transform
+    dio.transformer = DioTransformer(); // replace dio default transformer
+  }
+}
