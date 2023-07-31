@@ -9,7 +9,7 @@ import 'package:lotus_application/features/home/screens/home_screen.dart';
 
 // Project imports:
 
-class Pages extends RouteObserver<PageRoute<dynamic>> {
+class NavigatorPages extends RouteObserver<PageRoute<dynamic>> {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey();
   static GlobalKey<NavigatorState> navigatorAccountKey = GlobalKey();
 

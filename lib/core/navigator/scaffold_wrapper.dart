@@ -36,7 +36,7 @@ class _ScaffoldWrapperState extends State<ScaffoldWrapper>
 
   @override
   void didChangeMetrics() {
-    if (_ignoreRotateEvent.contains(Pages.currentRoute())) return;
+    if (_ignoreRotateEvent.contains(NavigatorPages.currentRoute())) return;
   }
 
   _hideKeyboard() {
@@ -75,11 +75,12 @@ class _ScaffoldWrapperState extends State<ScaffoldWrapper>
   Widget get _getBody {
     return GestureDetector(
       onHorizontalDragUpdate:
-          Platform.isAndroid || [].contains(Pages.currentRoute())
+          Platform.isAndroid || [].contains(NavigatorPages.currentRoute())
               ? null
               : (details) async {
                   // Cannot back when at ROOT, EDIT_PHOTO and Connecting Call
-                  if (Platform.isIOS && ![].contains(Pages.currentRoute())) {
+                  if (Platform.isIOS &&
+                      ![].contains(NavigatorPages.currentRoute())) {
                     //set the sensitivity for your ios gesture anywhere between 10-50 is good
 
                     const int sensitivity = 15;
@@ -88,7 +89,7 @@ class _ScaffoldWrapperState extends State<ScaffoldWrapper>
                       //SWIPE FROM RIGHT DETECTION
                       final bool canBackward = await _goBackward();
                       if (canBackward) {
-                        Pages.pop();
+                        NavigatorPages.pop();
                       }
                     }
                   }
