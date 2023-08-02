@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:lotus_application/core/navigator/pages.dart';
 import 'package:lotus_application/core/utils/after_layou_mixin.dart';
 import 'package:lotus_application/features/app/presentation/screens/splash_screen.dart';
-import 'package:lotus_application/features/auth/presentation/screens/authenication_screen.dart';
+import 'package:lotus_application/features/home/presentation/screens/home_screen.dart';
 import 'package:sizer/sizer.dart';
 
 class MyApp extends StatefulWidget {
@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> with AfterLayoutMixin {
           onGenerateRoute: (settings) {
             return NavigatorPages().getRoute(settings);
           },
-          home: _isInitial ? const SplashScreen() : const AuthenicationScreen(),
+          home: _isInitial ? const SplashScreen() : const HomeScreen(),
         );
       },
     );

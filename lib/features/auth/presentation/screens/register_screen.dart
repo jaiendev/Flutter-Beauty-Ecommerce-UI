@@ -72,7 +72,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               )
             ],
           ),
-          SizedBox(height: 20.sp),
+          SizedBox(height: 15.sp),
           Text(
             'Name',
             style: TextStyle(
@@ -146,12 +146,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
               },
             ),
           ),
-          SizedBox(height: 12.sp),
+          SizedBox(height: 18.sp),
           ButtonApp(
             onTap: () {},
             title: 'Register',
           ),
-          SizedBox(height: 20.sp),
+          SizedBox(height: 14.sp),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

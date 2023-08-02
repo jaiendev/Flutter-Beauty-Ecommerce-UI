@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		2HmfUjQdxTHLqZwzFA4W2vrpH0s=
+		Abt4IPkG5Ob3T+iufeL6W86+Mx8=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		YRFw6S7Bht1kjkkpPoRVV+0lm9I=
+		TVPAbdKcsd8c1Tbri49LAjhf0gI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -100,6 +100,14 @@
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/isolate_snapshot_data</key>
+		<data>
+		v838gQ8J3jZ6qbliqEDYbLiFWwY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
+		<data>
+		KCo3TLbgpsd1M7rkMBkVZsnAoVg=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
 		P7bb/oR3EhwqCIH1M6LyTuBIWYU=
@@ -132,9 +140,13 @@
 		<data>
 		KL+7f3IYR/Y9WDlxxUeDmgGoluc=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/vm_snapshot_data</key>
+		<data>
+		wVCDsOQlJhUyvrMuhaM3MeqUNWk=
+		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		pu9auzY6/CsdC0lvZka7cA2Dfik=
+		hlkaXkAZx8gzl7Zpz8/I9RITS74=
 		</data>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
 		<data>
@@ -226,7 +238,7 @@
 		</data>
 		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash</key>
 		<data>
-		5Ul7ce6989/EdnV20tbNI1EgULI=
+		BpqFB91NNwGwJx9A13ap25XEMAY=
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<data>
@@ -238,11 +250,11 @@
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
 		<data>
-		9lpYiGlj+CQB26V01b+VAyel7gM=
+		PTkUkXbxUjdPMBqhdYTvYjCBZ7A=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pthL4DLws43MKCV6nyYL68R0T2Y=
+		VAG2x0COGGvSC5Qt0bqn7aRs3hY=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -329,7 +341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NVTXwHyjid/hzPjb3mZiIhlmW+4SaAQJIDfZ7pc6Y4Q=
+			ugp1RzouoZ5MzuUNdq8wSm8GED/Y5gDF18GQ3YNqdmw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -343,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X7uHijRZxT/CD6ypmDFenl5kK393/a3tZveoJ/QXcco=
+			AztIYTZVlcR4dl5pDHkJ6EUIDWJe2OUy3NTVPgQEgXQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -423,6 +435,20 @@
 			2YZbZxoJ1oPROoYwidiCXg9ho3aWzl19RIvIAjqmJFM=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/isolate_snapshot_data</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q3MKecK2WuV9poeiw1fLKIYR/n61LLk5ZpHhUj6YMJw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GyM42h4thgN9fa7bqn9ZdplH5+Yl0I3x7OBCeAZl4TE=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -479,11 +505,18 @@
 			v6u8YtYjslOLIIb1rrgcOW817fxVEiBaprKuV+f6FpY=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/vm_snapshot_data</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pKvVVo/CPIJFzUPS2fhLuWOuiKFXCBKbw9g8gmDjVXE=
+			</data>
+		</dict>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6C5vQlpb7KaMfyjwKHKwvylFSSkbbOLSqfhidGw/9m0=
+			iyqGh/M0vpA3TlhiFWPHU47Pl0vMS41wkQUfijXX8JE=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
@@ -644,7 +677,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yZXFhLP6tt7jS5rzABhfyHTjsIxvG+awHkFo42dAh84=
+			tq5W44ZmTY3y4AcqBaFh6inqt3MhPTG2V5HXNwdMWrc=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
@@ -665,7 +698,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q6lZepmyI4dvmY8DLmy7ph8tIgSSG0z+z4PBF08VPhM=
+			/fE9gZW3BiXHY0qEH1U0cFIFQxXIKpShR5r+ir6+luo=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

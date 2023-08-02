@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
 import 'package:lotus_application/core/app/constants/assets_icon_image.dart';
+import 'package:lotus_application/core/navigator/pages.dart';
+import 'package:lotus_application/core/navigator/routes.dart';
 import 'package:lotus_application/core/utils/button_app.dart';
 import 'package:lotus_application/core/utils/text_form_field/auth_form_field.dart';
 import 'package:lotus_application/features/auth/presentation/widgets/button_login_social.dart';
@@ -142,7 +144,9 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           SizedBox(height: 24.sp),
           ButtonApp(
-            onTap: () {},
+            onTap: () {
+              NavigatorPages.push(Routes.root);
+            },
             title: 'Login',
           ),
           SizedBox(height: 20.sp),
