@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:lotus_application/features/app/screens/app.dart';
+import 'package:lotus_application/features/app/presentation/screens/app.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
