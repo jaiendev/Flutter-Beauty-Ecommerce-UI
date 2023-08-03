@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		B9IZrR7Va4a6xgsCCDCq1w4dFk8=
+		BiCfpzSPBLdqpmDbGfKnfsZXbUs=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		ClQcAjWRK1EHRyayFPDnWuOeScs=
+		PcEq+PJ6ko9HH0/MNJW7AJmxGjw=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		or4FsUlKvjeGTPnjUyA/sf51vxc=
+		m66qS7R+I+9Udb1qwP6KSbToIw8=
 		</data>
 		<key>flutter_assets/assets/icons/ic_eye_hide.png</key>
 		<data>
@@ -40,13 +40,65 @@
 		<data>
 		k1imMv52UgbQdsGK85yBWz19xh8=
 		</data>
+		<key>flutter_assets/assets/icons/ic_hot_deal.png</key>
+		<data>
+		PZ/xOdLZj9vhgA7wwYzTDVagZp8=
+		</data>
+		<key>flutter_assets/assets/images/img_avatar_user.png</key>
+		<data>
+		iq0YJy3VqVluTQTXLm3NLczQZ6M=
+		</data>
 		<key>flutter_assets/assets/images/img_background_login.png</key>
 		<data>
 		l4vK8pQf6/VVi6QFaYhxToquZHA=
 		</data>
+		<key>flutter_assets/assets/images/img_banner_1.png</key>
+		<data>
+		x/JdA4N89yirDmt5JqhLnDVy07U=
+		</data>
+		<key>flutter_assets/assets/images/img_banner_2.png</key>
+		<data>
+		Yo9d4qGSS7ByHAyKGg2qIKxGfkw=
+		</data>
+		<key>flutter_assets/assets/images/img_banner_3.png</key>
+		<data>
+		gGM6qmvDJOCnhDECAtjwg9F9dHA=
+		</data>
+		<key>flutter_assets/assets/images/img_banner_4.png</key>
+		<data>
+		LCq9H5lsk0njH5zt0598JbQswLw=
+		</data>
+		<key>flutter_assets/assets/images/img_banner_5.png</key>
+		<data>
+		UrQyuBhiAJN5uy/NNXZISknJGEE=
+		</data>
+		<key>flutter_assets/assets/images/img_climique_logo.png</key>
+		<data>
+		leGee0dNtWGWrp5O33ooKiawMos=
+		</data>
+		<key>flutter_assets/assets/images/img_innisfree_logo.png</key>
+		<data>
+		onmpfadh/id5HG1M11jHnc6AZpk=
+		</data>
 		<key>flutter_assets/assets/images/img_logo.png</key>
 		<data>
 		Hjeay2L28xivgUt5qR7mfRlP4QI=
+		</data>
+		<key>flutter_assets/assets/images/img_loreal_logo.png</key>
+		<data>
+		uGxmEu4G7D6rSxpqJ6pbVxsX9hg=
+		</data>
+		<key>flutter_assets/assets/images/img_mac_logo.png</key>
+		<data>
+		1nUSx86DWxINO5sekjHSLf68IQ0=
+		</data>
+		<key>flutter_assets/assets/images/img_maybelline_logo.png</key>
+		<data>
+		xVRpFBTcCcnzyB/XJU4ePC/Bf2M=
+		</data>
+		<key>flutter_assets/assets/images/img_olay_logo.png</key>
+		<data>
+		nvBmvMWSPspW4ylzFeKd8XLXfZA=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -91,14 +143,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			76tz/30x+kC+QxNA8oZjbjonoM13feEEkk0usrA7UPc=
+			uMvxg8tfENn1nL+9jdHNbBF8Qy6k/WNYwSM2a7YTyB8=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3dJYB83HVmrlGymy91JYloehUgxbzmDkmK4wompLVSk=
+			PyiJTwC6RHVC3BQ4V1CbU4I231EgwTLPHoIdVY9oJJ4=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -112,7 +164,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pYnq40m73FNw4C5eoac+trLZmoNw8SDsoKPDb2BC6N0=
+			9qWC2GqMUbYweBDvilearbI/JaBeQLG+/NFUeXkW5UY=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/icons/ic_eye_hide.png</key>
@@ -143,6 +195,20 @@
 			zDCnPR/TZT+VTDoQtr3fIvyJWO+K6wJNJW9+EmNCNyQ=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/icons/ic_hot_deal.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LGEEYwDToSlrHpvQpXqTQbBsJw1ucW02hUtI5LBooLA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_avatar_user.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XjDk9g2Sl+egXvJbPT8/gzDzzFY382Ub+hq3HGA77jE=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/img_background_login.png</key>
 		<dict>
 			<key>hash2</key>
@@ -150,11 +216,88 @@
 			s+k93i76WsKnNeJXrEVduJw+hooRvc+ftgx2qOXdIj8=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/img_banner_1.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kK2duOjsL4o52qlleNIOWeMGsygS/2l7sC4R6HRwANY=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_banner_2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hPwGS+se0/gJULZtf/eZy3YqCsg/TIYJZL8BZMef5p4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_banner_3.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WT3AGIXChLrPW9ToT1NI2njCpE3aXPOXdC6SmQ5ETw4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_banner_4.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ilYIg7SIXbHC8lARYq0zOoYI35zqdiKjtj/CMKNVg3c=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_banner_5.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sucrH7pX+7JdarU7mCeOASPN1CvO4kWDrNOvhyJlqpI=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_climique_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5pHVLcTUqVlgSvGhVn5ZACfdCAYgfny351sWBmVtu0I=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_innisfree_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xKzh8Wdy1iRSt9IgYhJKk0VOc/xjGQBtXOTO+cZEXYE=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/img_logo.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			OUHRuXpgmj9xhyr7onNB/Gia2pBLecsz8YfYWgAnLDQ=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_loreal_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nURQD0e6f8ckc0vnR+yEAAeXEhfsfPQovILkTjT1M4E=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_mac_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vLYfzuObHnVEY+FBvIkWAopLzQQZmw5zrH9qBG/SInc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_maybelline_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AfTAVaiyK8eODWSSlvEzkGT/xVvH2ZzHOZ+tNIZsAbc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/img_olay_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VSEFGtc29Mim2fmO/HpDk22JDH09+6dFVWGmJmbqw0c=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
