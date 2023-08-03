@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
-import 'package:lotus_application/core/app/constants/assets_icon_image.dart';
 import 'package:lotus_application/core/utils/app_bar/app_bar_none.dart';
+import 'package:lotus_application/features/home/presentation/widgets/deal_hot.dart';
+import 'package:lotus_application/features/home/presentation/widgets/famous_branch.dart';
 import 'package:lotus_application/features/home/presentation/widgets/header_home.dart';
-import 'package:lotus_application/features/home/presentation/widgets/title_see_all.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:sizer/sizer.dart';
 
@@ -32,45 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 const HeaderHome(),
                 SizedBox(height: 15.sp),
-                const TitleSeeAll(title: 'Famous branches'),
-                SizedBox(
-                  height: 70.sp,
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: 10,
-                    scrollDirection: Axis.horizontal,
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 12.sp,
-                      vertical: 10.sp,
-                    ),
-                    itemBuilder: (context, index) {
-                      return Container(
-                        height: 50.sp,
-                        width: 50.sp,
-                        margin: EdgeInsets.only(right: 13.sp),
-                        padding: EdgeInsets.all(10.sp),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10.sp),
-                          boxShadow: [
-                            BoxShadow(
-                              color: colorPrimary2.withOpacity(0.1),
-                              spreadRadius: 0.4,
-                              blurRadius: 10,
-                              offset: const Offset(
-                                0,
-                                1,
-                              ), // changes position of shadow
-                            ),
-                          ],
-                        ),
-                        child: Image.asset(
-                          AssetsIconImage.imgInnisfree,
-                        ),
-                      );
-                    },
-                  ),
-                ),
+                const FamousBranch(),
+                SizedBox(height: 10.sp),
+                const DealHot(),
               ],
             ),
             Align(

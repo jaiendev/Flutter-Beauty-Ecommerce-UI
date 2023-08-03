@@ -5,9 +5,11 @@ import 'package:sizer/sizer.dart';
 
 class TitleSeeAll extends StatelessWidget {
   final String title;
+  final bool isVisibileSeeAll;
   const TitleSeeAll({
     super.key,
     required this.title,
+    this.isVisibileSeeAll = true,
   });
 
   @override
@@ -28,19 +30,25 @@ class TitleSeeAll extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          Text(
-            'See all',
-            style: TextStyle(
-              color: colorPrimary2,
-              fontSize: 11.sp,
-            ),
-          ),
-          SizedBox(width: 3.sp),
-          Icon(
-            PhosphorIcons.light.caretRight,
-            color: colorPrimary2,
-            size: 10.sp,
-          ),
+          !isVisibileSeeAll
+              ? const SizedBox()
+              : Row(
+                  children: [
+                    Text(
+                      'See all',
+                      style: TextStyle(
+                        color: colorPrimary2,
+                        fontSize: 11.sp,
+                      ),
+                    ),
+                    SizedBox(width: 3.sp),
+                    Icon(
+                      PhosphorIcons.light.caretRight,
+                      color: colorPrimary2,
+                      size: 10.sp,
+                    ),
+                  ],
+                )
         ],
       ),
     );
