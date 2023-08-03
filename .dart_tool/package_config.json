@@ -614,6 +614,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "super_sliver_list",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/super_sliver_list-0.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "synchronized",
       "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/synchronized-3.1.0",
       "packageUri": "lib/",
@@ -704,7 +710,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-08-03T00:33:51.884942Z",
+  "generated": "2023-08-03T14:31:50.530392Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }

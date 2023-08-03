@@ -805,6 +805,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  super_sliver_list:
+    dependency: "direct main"
+    description:
+      name: super_sliver_list
+      sha256: "305966fc43a0ed9af708f82ab076d28cefa8668f69d232e19ad30dde7ee3079f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.7"
   synchronized:
     dependency: transitive
     description:

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
 import 'package:lotus_application/core/app/constants/assets_icon_image.dart';
-import 'package:lotus_application/features/home/presentation/widgets/search_home.dart';
 import 'package:sizer/sizer.dart';
 
 class HeaderHome extends StatelessWidget {
@@ -11,17 +10,7 @@ class HeaderHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(
-        color: colorPrimary,
-        boxShadow: [
-          BoxShadow(
-            color: colorPrimary2.withOpacity(0.12),
-            spreadRadius: 0.3,
-            blurRadius: 7,
-            offset: const Offset(0, 3), // changes position of shadow
-          ),
-        ],
-      ),
+      color: colorPrimary,
       padding: EdgeInsets.symmetric(
         horizontal: 12.sp,
         vertical: 15.sp,
@@ -82,7 +71,7 @@ class HeaderHome extends StatelessWidget {
             ],
           ),
           SizedBox(height: 18.sp),
-          const SearchHome(),
+          // const SearchHome(),
         ],
       ),
     );

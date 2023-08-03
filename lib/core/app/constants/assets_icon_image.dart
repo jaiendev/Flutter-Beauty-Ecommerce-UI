@@ -26,4 +26,5 @@ class AssetsIconImage {
   static const String icEyeView = 'assets/icons/ic_eye_view.png';
   static const String icEyeHide = 'assets/icons/ic_eye_hide.png';
   static const String icDealHot = 'assets/icons/ic_hot_deal.png';
+  static const String icBookMark = 'assets/icons/ic_book_mark.png';
 }

@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
 import 'package:lotus_application/core/utils/app_bar/app_bar_none.dart';
+import 'package:lotus_application/core/utils/sliver_app_bar_delegate.dart';
 import 'package:lotus_application/features/home/presentation/widgets/deal_hot.dart';
 import 'package:lotus_application/features/home/presentation/widgets/famous_branch.dart';
 import 'package:lotus_application/features/home/presentation/widgets/header_home.dart';
+import 'package:lotus_application/features/home/presentation/widgets/search_home.dart';
+import 'package:lotus_application/features/home/presentation/widgets/service_popular.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:sizer/sizer.dart';
+import 'package:super_sliver_list/super_sliver_list.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,6 +20,29 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final int _currentIndex = 0;
+  final ScrollController _scrollController = ScrollController();
+  bool _isBigHeader = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(() {
+      if (_scrollController.position.pixels > 80.sp) {
+        if (_isBigHeader) {
+          setState(() {
+            _isBigHeader = false;
+          });
+        }
+      } else if (_scrollController.position.pixels <= 242.sp) {
+        if (!_isBigHeader) {
+          setState(() {
+            _isBigHeader = true;
+          });
+        }
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,15 +53,56 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: colorPrimary,
       ),
       body: SafeArea(
+        bottom: false,
         child: Stack(
           children: [
-            Column(
-              children: [
-                const HeaderHome(),
-                SizedBox(height: 15.sp),
-                const FamousBranch(),
-                SizedBox(height: 10.sp),
-                const DealHot(),
+            CustomScrollView(
+              controller: _scrollController,
+              physics: const BouncingScrollPhysics(),
+              slivers: [
+                SliverPersistentHeader(
+                  pinned: true,
+                  delegate: SliverAppBarDelegate(
+                    minHeight: 50.sp,
+                    maxHeight: 118.sp,
+                    child: Stack(
+                      children: [
+                        _isBigHeader
+                            ? const HeaderHome()
+                            : ColoredBox(
+                                color: Theme.of(context).primaryColor,
+                                child: SizedBox(
+                                  height: 50.sp,
+                                  width: 100.w,
+                                ),
+                              ),
+                        Positioned(
+                          bottom: 0.sp,
+                          left: 0,
+                          right: 0,
+                          child: SearchHome(isBigHeader: _isBigHeader),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SliverPadding(
+                  padding: EdgeInsets.only(top: 15.sp),
+                  sliver: SuperSliverList(
+                    delegate: SliverChildListDelegate(
+                      [
+                        const FamousBranch(),
+                        SizedBox(height: 10.sp),
+                        const DealHot(),
+                        SizedBox(height: 18.sp),
+                        const ServicePopular(),
+                        SizedBox(
+                          height: 100.sp,
+                        )
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
             Align(
@@ -53,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 margin: EdgeInsets.symmetric(
-                  vertical: 5.sp,
+                  vertical: 18.sp,
                   horizontal: 16.sp,
                 ),
                 child: Row(
