@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
+import 'package:lotus_application/core/app/constants/constants.dart';
 import 'package:lotus_application/core/utils/app_bar/app_bar_none.dart';
 import 'package:lotus_application/core/utils/sliver_app_bar_delegate.dart';
 import 'package:lotus_application/features/home/presentation/widgets/deal_hot.dart';
 import 'package:lotus_application/features/home/presentation/widgets/famous_branch.dart';
+import 'package:lotus_application/features/home/presentation/widgets/featuring_product.dart';
 import 'package:lotus_application/features/home/presentation/widgets/header_home.dart';
+import 'package:lotus_application/features/home/presentation/widgets/review_service.dart';
 import 'package:lotus_application/features/home/presentation/widgets/search_home.dart';
 import 'package:lotus_application/features/home/presentation/widgets/service_popular.dart';
+import 'package:lotus_application/features/home/presentation/widgets/top_trending.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:sizer/sizer.dart';
 import 'package:super_sliver_list/super_sliver_list.dart';
@@ -92,13 +96,27 @@ class _HomeScreenState extends State<HomeScreen> {
                     delegate: SliverChildListDelegate(
                       [
                         const FamousBranch(),
-                        SizedBox(height: 10.sp),
+                        SizedBox(height: 6.sp),
+                        dividerChatBig,
+                        SizedBox(height: 20.sp),
+                        const FeaturingProduct(),
+                        SizedBox(height: 20.sp),
+                        dividerChatBig,
+                        SizedBox(height: 20.sp),
                         const DealHot(),
-                        SizedBox(height: 18.sp),
+                        SizedBox(height: 20.sp),
+                        dividerChatBig,
+                        SizedBox(height: 20.sp),
                         const ServicePopular(),
-                        SizedBox(
-                          height: 100.sp,
-                        )
+                        SizedBox(height: 20.sp),
+                        dividerChatBig,
+                        SizedBox(height: 20.sp),
+                        const TopTrending(),
+                        SizedBox(height: 20.sp),
+                        dividerChatBig,
+                        SizedBox(height: 20.sp),
+                        const ReviewService(),
+                        SizedBox(height: 100.sp)
                       ],
                     ),
                   ),

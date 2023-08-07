@@ -6,10 +6,12 @@ import 'package:sizer/sizer.dart';
 class TitleSeeAll extends StatelessWidget {
   final String title;
   final bool isVisibileSeeAll;
+  final String? icon;
   const TitleSeeAll({
     super.key,
     required this.title,
     this.isVisibileSeeAll = true,
+    this.icon,
   });
 
   @override
@@ -21,11 +23,23 @@ class TitleSeeAll extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          icon == null
+              ? const SizedBox()
+              : Row(
+                  children: [
+                    Image.asset(
+                      icon!,
+                      height: 16.sp,
+                      color: colorPrimary2,
+                    ),
+                    SizedBox(width: 8.sp),
+                  ],
+                ),
           Text(
             title,
             style: TextStyle(
               color: colorPrimary2,
-              fontSize: 15.sp,
+              fontSize: 13.sp,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -38,7 +52,7 @@ class TitleSeeAll extends StatelessWidget {
                       'See all',
                       style: TextStyle(
                         color: colorPrimary2,
-                        fontSize: 11.sp,
+                        fontSize: 9.sp,
                       ),
                     ),
                     SizedBox(width: 3.sp),

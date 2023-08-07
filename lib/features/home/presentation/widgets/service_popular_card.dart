@@ -12,14 +12,24 @@ class ServicePopularCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 170.sp,
-      margin: EdgeInsets.only(right: 10.sp),
+      width: 190.sp,
+      margin: EdgeInsets.symmetric(vertical: 4.sp)
+          .add(EdgeInsets.only(right: 10.sp)),
       decoration: BoxDecoration(
+        color: Colors.white,
         borderRadius: BorderRadius.circular(15.sp),
         border: Border.all(
-          width: 0.6.sp,
+          width: 0.4.sp,
           color: colorPrimary2,
         ),
+        boxShadow: [
+          BoxShadow(
+            color: colorPrimary2.withOpacity(0.3),
+            spreadRadius: 0.3,
+            blurRadius: 6,
+            offset: const Offset(0, 3), // changes position of shadow
+          ),
+        ],
       ),
       child: Stack(
         children: [
@@ -36,7 +46,7 @@ class ServicePopularCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12.sp),
                     child: Image.asset(
                       AssetsIconImage.imgBanner1,
-                      width: 158.sp,
+                      width: 178.sp,
                       height: 75.sp,
                       fit: BoxFit.cover,
                     ),
@@ -44,7 +54,7 @@ class ServicePopularCard extends StatelessWidget {
                 ),
               ),
               Container(
-                width: 158.sp,
+                width: 178.sp,
                 padding: EdgeInsets.symmetric(
                   horizontal: 6.sp,
                 ),

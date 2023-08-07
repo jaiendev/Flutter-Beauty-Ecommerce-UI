@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:lotus_application/core/app/constants/app_colors.dart';
+import 'package:lotus_application/core/app/constants/assets_icon_image.dart';
 import 'package:lotus_application/features/home/data/models/branch_model.dart';
 import 'package:lotus_application/features/home/presentation/widgets/branch_card.dart';
 import 'package:lotus_application/features/home/presentation/widgets/title_see_all.dart';
@@ -14,7 +15,10 @@ class FamousBranch extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const TitleSeeAll(title: 'Famous branches'),
+        const TitleSeeAll(
+          title: 'Famous branches',
+          icon: AssetsIconImage.icFamous,
+        ),
         SizedBox(
           height: 70.sp,
           child: ListView.builder(

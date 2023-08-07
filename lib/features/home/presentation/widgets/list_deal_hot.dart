@@ -32,14 +32,18 @@ class _ListDealHotState extends State<ListDealHot> {
           children: [
             GestureDetector(
               onTap: () {},
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12.sp),
-                ),
-                child: CarouselSlider(
-                  items: List.generate(
-                    listBanner.length,
-                    (index) => ClipRRect(
+              child: CarouselSlider(
+                items: List.generate(
+                  listBanner.length,
+                  (index) => Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8.sp),
+                      border: Border.all(
+                        width: 0.4.sp,
+                        color: colorPrimary2,
+                      ),
+                    ),
+                    child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.sp),
                       child: Image.asset(
                         listBanner[index],
@@ -49,18 +53,18 @@ class _ListDealHotState extends State<ListDealHot> {
                       ),
                     ),
                   ),
-                  options: CarouselOptions(
-                    aspectRatio: 21 / 9,
-                    autoPlay: true,
-                    enlargeCenterPage: true,
-                    enlargeFactor: 0.4,
-                    viewportFraction: 1,
-                    onPageChanged: (index, reason) {
-                      setState(() {
-                        _current = index;
-                      });
-                    },
-                  ),
+                ),
+                options: CarouselOptions(
+                  aspectRatio: 21 / 9,
+                  autoPlay: true,
+                  enlargeCenterPage: true,
+                  enlargeFactor: 0.4,
+                  viewportFraction: 1,
+                  onPageChanged: (index, reason) {
+                    setState(() {
+                      _current = index;
+                    });
+                  },
                 ),
               ),
             ),
