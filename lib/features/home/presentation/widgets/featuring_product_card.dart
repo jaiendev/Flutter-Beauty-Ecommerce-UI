@@ -36,12 +36,37 @@ class FeaturingProductCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(8.sp),
-            child: Image.asset(
-              AssetsIconImage.imgProduct,
-              width: 150.sp,
-              height: 100.sp,
-              fit: BoxFit.cover,
+            borderRadius: BorderRadius.circular(10.sp),
+            child: Stack(
+              children: [
+                Image.asset(
+                  AssetsIconImage.imgProduct,
+                  width: 150.sp,
+                  height: 100.sp,
+                  fit: BoxFit.cover,
+                ),
+                Positioned(
+                  right: 0,
+                  child: Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 9.sp, vertical: 5.sp),
+                    decoration: BoxDecoration(
+                      color: colorPrimary,
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(10.sp),
+                      ),
+                    ),
+                    child: Text(
+                      'NEW PRODUCT',
+                      style: TextStyle(
+                        color: colorPrimary2,
+                        fontSize: 8.sp,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           Container(
