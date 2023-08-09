@@ -3,15 +3,15 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-63.0.0",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-61.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.17"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/analyzer-6.1.0",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/analyzer-5.13.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.19"
     },
     {
       "name": "archive",
@@ -34,6 +34,12 @@
     {
       "name": "bloc",
       "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/bloc-8.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "bloc_concurrency",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/bloc_concurrency-0.2.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -308,6 +314,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "glassmorphism",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/glassmorphism-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "glob",
       "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/glob-2.1.2",
       "packageUri": "lib/",
@@ -366,6 +378,12 @@
       "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/injectable-2.2.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "injectable_generator",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/injectable_generator-2.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "intl",
@@ -542,6 +560,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "recase",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/recase-4.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "rxdart",
       "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/rxdart-0.27.7",
       "packageUri": "lib/",
@@ -568,6 +592,12 @@
     {
       "name": "sky_engine",
       "rootUri": "file:///Users/waodatewaodate/Downloads/flutter/bin/cache/pkg/sky_engine",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "source_gen",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/source_gen-1.4.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -710,7 +740,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-08-07T15:56:59.960324Z",
+  "generated": "2023-08-08T15:46:07.894185Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }

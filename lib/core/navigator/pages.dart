@@ -5,7 +5,7 @@ import 'package:lotus_application/core/navigator/app_navigator.dart';
 import 'package:lotus_application/core/navigator/routes.dart';
 import 'package:lotus_application/core/navigator/scaffold_wrapper.dart';
 import 'package:lotus_application/core/navigator/transition_routes.dart';
-import 'package:lotus_application/features/home/presentation/screens/home_screen.dart';
+import 'package:lotus_application/features/home/presentation/screens/home.dart';
 
 // Project imports:
 
@@ -19,12 +19,12 @@ class NavigatorPages extends RouteObserver<PageRoute<dynamic>> {
       case Routes.root:
         return _buildRoute(
           settings,
-          const HomeScreen(),
+          const Home(),
         );
       default:
         return _buildRoute(
           settings,
-          const HomeScreen(),
+          const Home(),
         );
     }
   }

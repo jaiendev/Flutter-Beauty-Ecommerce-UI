@@ -14,6 +14,8 @@ class AssetsIconImage {
   static const String imgMaybeline = 'assets/images/img_maybelline_logo.png';
   static const String imgOlay = 'assets/images/img_olay_logo.png';
   static const String imgProduct = 'assets/images/img_product.png';
+  static const String imgBackgroundProfile =
+      'assets/images/img_background_profile.png';
 
   // Banner
   static const String imgBanner1 = 'assets/images/img_banner_1.png';
@@ -36,4 +38,9 @@ class AssetsIconImage {
   static const String icFilter = 'assets/icons/ic_filter.png';
   static const String icTag = 'assets/icons/ic_tag.png';
   static const String icLotion = 'assets/icons/ic_lotion.png';
+
+  // Profile Screen
+  static const String icMyOrder = 'assets/icons/ic_my_order.png';
+  static const String icWishlist = 'assets/icons/ic_wishlist.png';
+  static const String icVoucher = 'assets/icons/ic_voucher.png';
 }

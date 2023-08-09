@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:lotus_application/core/injections/injection_container.dart';
 import 'package:lotus_application/features/app/presentation/screens/app.dart';
 
 void main() {
@@ -11,5 +12,7 @@ void main() {
       statusBarColor: Colors.transparent,
     ),
   );
+  // Init dependency injection
+  configureDependencies();
   runApp(const MyApp());
 }

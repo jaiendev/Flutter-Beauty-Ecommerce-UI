@@ -11,7 +11,6 @@ import 'package:lotus_application/features/home/presentation/widgets/review_serv
 import 'package:lotus_application/features/home/presentation/widgets/search_home.dart';
 import 'package:lotus_application/features/home/presentation/widgets/service_popular.dart';
 import 'package:lotus_application/features/home/presentation/widgets/top_trending.dart';
-import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:sizer/sizer.dart';
 import 'package:super_sliver_list/super_sliver_list.dart';
 
@@ -23,7 +22,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final int _currentIndex = 0;
   final ScrollController _scrollController = ScrollController();
   bool _isBigHeader = true;
 
@@ -37,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
             _isBigHeader = false;
           });
         }
-      } else if (_scrollController.position.pixels <= 242.sp) {
+      } else if (_scrollController.position.pixels <= 252.sp) {
         if (!_isBigHeader) {
           setState(() {
             _isBigHeader = true;
@@ -68,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   pinned: true,
                   delegate: SliverAppBarDelegate(
                     minHeight: 50.sp,
-                    maxHeight: 118.sp,
+                    maxHeight: 120.sp,
                     child: Stack(
                       children: [
                         _isBigHeader
@@ -122,81 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ],
-            ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: colorPrimary,
-                  borderRadius: BorderRadius.circular(10.sp),
-                  boxShadow: [
-                    BoxShadow(
-                      color: colorPrimary2.withOpacity(0.15),
-                      spreadRadius: 0.4,
-                      blurRadius: 6,
-                      offset: const Offset(0, 3), // changes position of shadow
-                    ),
-                  ],
-                ),
-                margin: EdgeInsets.symmetric(
-                  vertical: 18.sp,
-                  horizontal: 16.sp,
-                ),
-                child: Row(
-                  children: [
-                    _buttonBottomNavigator(
-                      icon: PhosphorIcons.light.house,
-                      index: 0,
-                    ),
-                    _buttonBottomNavigator(
-                      icon: PhosphorIcons.light.calendarCheck,
-                      index: 1,
-                    ),
-                    _buttonBottomNavigator(
-                      icon: PhosphorIcons.light.chatTeardropDots,
-                      index: 2,
-                    ),
-                    _buttonBottomNavigator(
-                      icon: PhosphorIcons.light.userCircle,
-                      index: 3,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buttonBottomNavigator({required IconData icon, required int index}) {
-    return Expanded(
-      child: Container(
-        color: Colors.transparent,
-        padding: EdgeInsets.symmetric(
-          vertical: 10.sp,
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(
-              icon,
-              color:
-                  index == _currentIndex ? colorPrimary2 : Colors.grey.shade400,
-              size: 20.sp,
-            ),
-            SizedBox(height: 3.sp),
-            index != _currentIndex
-                ? const SizedBox()
-                : Container(
-                    height: 3.sp,
-                    width: 3.sp,
-                    decoration: const BoxDecoration(
-                      color: colorPrimary2,
-                      shape: BoxShape.circle,
-                    ),
-                  )
+            )
           ],
         ),
       ),

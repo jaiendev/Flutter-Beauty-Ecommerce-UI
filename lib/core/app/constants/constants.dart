@@ -1,6 +1,7 @@
 // Remote Data
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
+import 'package:sizer/sizer.dart';
 
 const String serviceBaseEndpoint = 'https://lala';
 
@@ -22,3 +23,14 @@ Container dividerChatBig = Container(
   color: colorPrimary2.withOpacity(0.2),
   height: 5,
 );
+
+Divider get dividerChat {
+  return const Divider();
+}
+
+Divider get dividerChatWithPadding {
+  return Divider(
+    indent: 12.sp,
+    endIndent: 12.sp,
+  );
+}
