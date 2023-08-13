@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
 import 'package:lotus_application/core/app/constants/assets_icon_image.dart';
-import 'package:lotus_application/features/profile/presentation/widgets/info_user_widget.dart';
 import 'package:lotus_application/features/schedule/presentation/widgets/button_icon.dart';
 import 'package:lotus_application/features/schedule/presentation/widgets/glass_morphic.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -69,9 +68,8 @@ class HeaderProfile extends StatelessWidget {
                             ),
                             SizedBox(width: 4.sp),
                             Image.asset(
-                              AssetsIconImage.icTrending,
+                              AssetsIconImage.icVerify,
                               height: 16.sp,
-                              color: Colors.green,
                             ),
                             const Spacer(),
                             Padding(
@@ -92,11 +90,13 @@ class HeaderProfile extends StatelessWidget {
                           ],
                         ),
                         SizedBox(height: 5.sp),
-                        InfoUserWidget(
-                          icon: PhosphorIcons.light.envelope,
-                          description: 'annhi2606@gmail.com',
-                          colorDescription: Colors.blue,
-                        )
+                        Text(
+                          'annhi2606@gmail.com',
+                          style: TextStyle(
+                            color: Colors.blue.shade700,
+                            fontSize: 11.sp,
+                          ),
+                        ),
                       ],
                     ),
                   ),

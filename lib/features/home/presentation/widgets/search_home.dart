@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
-import 'package:lotus_application/core/app/constants/assets_icon_image.dart';
+import 'package:lotus_application/features/home/presentation/widgets/button_have_badges.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:sizer/sizer.dart';
 
@@ -76,17 +76,22 @@ class SearchHome extends StatelessWidget {
           ),
           isBigHeader
               ? const SizedBox()
-              : Container(
-                  decoration: BoxDecoration(
-                    color: colorPrimary2,
-                    borderRadius: BorderRadius.circular(10.sp),
-                  ),
-                  padding: EdgeInsets.all(11.sp),
-                  margin: EdgeInsets.only(left: 10.sp),
-                  child: Image.asset(
-                    AssetsIconImage.icFilter,
-                    height: 13.sp,
-                    color: colorPrimary,
+              : Padding(
+                  padding: EdgeInsets.only(left: 12.sp, right: 2.sp),
+                  child: Row(
+                    children: [
+                      ButtonHaveBadges(
+                        icon: PhosphorIcons.light.shoppingBag,
+                        badges: 10,
+                        onTap: () {},
+                      ),
+                      SizedBox(width: 5.sp),
+                      ButtonHaveBadges(
+                        icon: PhosphorIcons.light.chatTeardropDots,
+                        badges: 5,
+                        onTap: () {},
+                      ),
+                    ],
                   ),
                 )
         ],

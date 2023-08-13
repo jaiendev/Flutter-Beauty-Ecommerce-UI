@@ -38,9 +38,12 @@ class AssetsIconImage {
   static const String icFilter = 'assets/icons/ic_filter.png';
   static const String icTag = 'assets/icons/ic_tag.png';
   static const String icLotion = 'assets/icons/ic_lotion.png';
+  static const String icWallet = 'assets/icons/ic_wallet.png';
+  static const String icShoppingBag = 'assets/icons/ic_shopping_bag.png';
 
   // Profile Screen
   static const String icMyOrder = 'assets/icons/ic_my_order.png';
   static const String icWishlist = 'assets/icons/ic_wishlist.png';
   static const String icVoucher = 'assets/icons/ic_voucher.png';
+  static const String icVerify = 'assets/icons/ic_verify.png';
 }

@@ -5,7 +5,17 @@ import 'package:sizer/sizer.dart';
 class Glassmorphic extends StatelessWidget {
   final double? height;
   final double? width;
-  const Glassmorphic({super.key, this.height, this.width});
+  final Widget? child;
+  final BoxConstraints? constraints;
+  final double? border;
+  const Glassmorphic({
+    super.key,
+    this.height,
+    this.width,
+    this.child,
+    this.constraints,
+    this.border,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +25,7 @@ class Glassmorphic extends StatelessWidget {
       borderRadius: 0,
       blur: 3,
       alignment: Alignment.bottomCenter,
-      border: 0,
+      border: border ?? 0,
       linearGradient: LinearGradient(
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
@@ -36,6 +46,7 @@ class Glassmorphic extends StatelessWidget {
           const Color(0xFFFFFFFF).withOpacity(0.5),
         ],
       ),
+      constraints: constraints,
       child: const SizedBox(),
     );
   }
