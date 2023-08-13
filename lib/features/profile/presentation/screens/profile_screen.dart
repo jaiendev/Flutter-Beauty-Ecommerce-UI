@@ -27,7 +27,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         // backgroundColor: colorPrimary,
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           const HeaderProfile(),
           SizedBox(height: 10.sp),
@@ -83,6 +83,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   title: 'Help center',
                 ),
               ],
+            ),
+          ),
+          SizedBox(height: 12.sp),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 16.sp, vertical: 9.sp),
+            margin: EdgeInsets.symmetric(horizontal: 12.sp),
+            decoration: BoxDecoration(
+              color: colorPrimary,
+              borderRadius: BorderRadius.circular(8.sp),
+              border: Border.all(width: 0.3.sp, color: colorPrimary2),
+            ),
+            child: Text(
+              'Logout',
+              style: TextStyle(
+                color: colorPrimary2,
+                fontSize: 11.sp,
+              ),
             ),
           )
         ],

@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		XnpjngHdqtCBClOnSuR6pF1F5WQ=
+		PDq60qihHTD0+ubcy2C+sWUbanU=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		2vLTvus5KANTW7VQ1zRt7T4xXZY=
+		ZGrExaJwvxE7yaUY2OWZiqOeZNM=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -64,6 +64,10 @@
 		<data>
 		hM0xsh8IUnJLfVzSG7NmOT8vQEs=
 		</data>
+		<key>flutter_assets/assets/icons/ic_my_order.png</key>
+		<data>
+		lG3bzVsuJInt8ByqZpyqiQ9MhzI=
+		</data>
 		<key>flutter_assets/assets/icons/ic_popular.png</key>
 		<data>
 		537NzRD9LsEluWGPJuL+GI6f3dI=
@@ -75,6 +79,14 @@
 		<key>flutter_assets/assets/icons/ic_trending.png</key>
 		<data>
 		vif+Hc8PGvtlfaQQm3l/Yv2Pxx4=
+		</data>
+		<key>flutter_assets/assets/icons/ic_voucher.png</key>
+		<data>
+		Xpqpenfg+Hblp7c/bUS4F8W/oRA=
+		</data>
+		<key>flutter_assets/assets/icons/ic_wishlist.png</key>
+		<data>
+		xbz1QFbXAZjj7XIhMsFt9v3+RsM=
 		</data>
 		<key>flutter_assets/assets/images/img_avatar_user.png</key>
 		<data>
@@ -154,7 +166,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		KL1wBX/D/gj5OPTpbh8aSw8JLmM=
+		2fOcaHmNp50BG37RrYSUBPdxfKM=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -199,14 +211,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZN1sEgKIbD+6m1HZ1ZLIQZYuQHi/JDIcu7k3V9gs0ww=
+			TgAZp8bDJWBgbTqlmB1xDlE26HGYwaPVPynrlAT6xvs=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/rmXKb2dflMPM/xq60oigpL8adXpjagt05QOpi2aWK8=
+			ZKR7KJScaQe3i0TktiW+KU8pRTArIODEoLoA0o3I7q0=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -293,6 +305,13 @@
 			1HL/aOqtRkHYqXvlm00uKW1lbqRaqRzZsd7iXB3QhCk=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/icons/ic_my_order.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VgJ6Mrk98H7qujYbMhMz9BSdkr9+2ov5yyAU5XRQNBQ=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/icons/ic_popular.png</key>
 		<dict>
 			<key>hash2</key>
@@ -312,6 +331,20 @@
 			<key>hash2</key>
 			<data>
 			uoZAOHQJVqdc462Dui2PRsfjENwxNUPy2FRQO3vj3h4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/icons/ic_voucher.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NezP3NmDDWLqJmp/Bq65azlF/slYUDYKqTZPuzonBl4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/icons/ic_wishlist.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HyQKLzqzQrgReFwK8tnD6uRouZXTEphY/bXEKCTuEZU=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/img_avatar_user.png</key>
@@ -451,7 +484,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GowwlgGFMa/vknC0MAs74Q5FucBmzloY2YDw9pVFINg=
+			P9OcspfJoJpe+LU8u7d2cYPElwzeniXXP3CDr3nZ82w=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
