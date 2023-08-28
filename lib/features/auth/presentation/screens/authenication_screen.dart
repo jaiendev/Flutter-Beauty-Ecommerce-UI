@@ -131,7 +131,7 @@ class _AuthenicationScreenState extends State<AuthenicationScreen> {
                 SizedBox(height: 15.sp),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

@@ -71,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: colorPrimary2.withOpacity(0.2),
                   height: 0.7.sp,
                 ),
-              )
+              ),
             ],
           ),
           SizedBox(height: 20.sp),
@@ -174,9 +174,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
-          )
+          ),
         ],
       ),
     );

@@ -114,13 +114,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         dividerChatBig,
                         SizedBox(height: 20.sp),
                         const ReviewService(),
-                        SizedBox(height: 100.sp)
+                        SizedBox(height: 100.sp),
                       ],
                     ),
                   ),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),

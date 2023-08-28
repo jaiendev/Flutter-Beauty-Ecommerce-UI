@@ -68,7 +68,7 @@ class SearchHome extends StatelessWidget {
                           ],
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -87,13 +87,13 @@ class SearchHome extends StatelessWidget {
                       ),
                       SizedBox(width: 5.sp),
                       ButtonHaveBadges(
-                        icon: PhosphorIcons.light.chatTeardropDots,
+                        icon: PhosphorIcons.light.bellSimpleRinging,
                         badges: 5,
                         onTap: () {},
                       ),
                     ],
                   ),
-                )
+                ),
         ],
       ),
     );

@@ -138,7 +138,7 @@ class FeaturingProductCard extends StatelessWidget {
               ),
               SizedBox(width: 3.sp),
             ],
-          )
+          ),
         ],
       ),
     );

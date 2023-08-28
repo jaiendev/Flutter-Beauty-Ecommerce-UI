@@ -97,10 +97,10 @@ class ServicePopularCard extends StatelessWidget {
                           ),
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
           Positioned(
@@ -124,7 +124,7 @@ class ServicePopularCard extends StatelessWidget {
                       fontSize: 7.5.sp,
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),

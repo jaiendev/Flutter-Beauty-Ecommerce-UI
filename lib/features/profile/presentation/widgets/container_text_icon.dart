@@ -27,7 +27,7 @@ class ContainerIconText extends StatelessWidget {
                 color: colorPrimary2,
                 fontSize: 8.sp,
               ),
-            )
+            ),
           ],
         ),
       ),

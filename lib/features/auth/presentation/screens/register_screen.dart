@@ -69,7 +69,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   color: colorPrimary2.withOpacity(0.2),
                   height: 0.7.sp,
                 ),
-              )
+              ),
             ],
           ),
           SizedBox(height: 15.sp),
@@ -176,9 +176,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
-          )
+          ),
         ],
       ),
     );

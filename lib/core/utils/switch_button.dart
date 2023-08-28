@@ -110,7 +110,7 @@ class _SwitchButtonState extends State<SwitchButton>
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

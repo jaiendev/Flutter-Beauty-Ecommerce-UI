@@ -107,7 +107,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       PhosphorIcons.fill.caretRight,
                       color: colorPrimary2,
                       size: 13.sp,
-                    )
+                    ),
               ],
             ),
           ),
@@ -138,7 +138,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 size: 17.sp,
               ),
             ),
-          )
+          ),
         ],
       ),
     );

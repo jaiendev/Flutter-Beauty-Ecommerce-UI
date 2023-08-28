@@ -47,7 +47,7 @@ class ButtonBottomNavigator extends StatelessWidget {
                         color: colorPrimary2,
                         shape: BoxShape.circle,
                       ),
-                    )
+                    ),
             ],
           ),
         ),

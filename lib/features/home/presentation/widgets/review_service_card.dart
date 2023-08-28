@@ -61,7 +61,7 @@ class ReviewServiceCard extends StatelessWidget {
                                 color: colorGrey,
                                 fontSize: 9.sp,
                               ),
-                            )
+                            ),
                           ],
                         ),
                         SizedBox(height: 1.7.sp),
@@ -73,7 +73,7 @@ class ReviewServiceCard extends StatelessWidget {
                             color: colorPrimary2,
                             fontSize: 8.sp,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -143,10 +143,10 @@ class ReviewServiceCard extends StatelessWidget {
                           ],
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
           Positioned(

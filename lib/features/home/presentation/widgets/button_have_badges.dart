@@ -6,11 +6,13 @@ class ButtonHaveBadges extends StatelessWidget {
   final IconData icon;
   final int badges;
   final Function() onTap;
+  final EdgeInsetsGeometry? margin;
   const ButtonHaveBadges({
     super.key,
     required this.icon,
     required this.badges,
     required this.onTap,
+    this.margin,
   });
 
   @override
@@ -20,6 +22,7 @@ class ButtonHaveBadges extends StatelessWidget {
       child: Container(
         width: 24.sp,
         color: Colors.transparent,
+        margin: margin,
         child: Stack(
           children: [
             Icon(

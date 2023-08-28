@@ -41,7 +41,7 @@ class HeaderHome extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 11.sp,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -65,9 +65,9 @@ class HeaderHome extends StatelessWidget {
                       color: colorPrimary2,
                       fontSize: 10.sp,
                     ),
-                  )
+                  ),
                 ],
-              )
+              ),
             ],
           ),
           SizedBox(height: 18.sp),

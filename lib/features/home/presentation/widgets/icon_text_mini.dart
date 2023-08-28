@@ -31,7 +31,7 @@ class IconTextMini extends StatelessWidget {
             color: color ?? colorPrimary2,
             fontSize: fontSize ?? 8.sp,
           ),
-        )
+        ),
       ],
     );
   }

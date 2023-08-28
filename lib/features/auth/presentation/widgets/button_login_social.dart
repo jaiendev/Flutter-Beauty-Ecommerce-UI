@@ -41,7 +41,7 @@ class ButtonLoginSocial extends StatelessWidget {
                 color: colorPrimary2,
                 fontSize: 12.sp,
               ),
-            )
+            ),
           ],
         ),
       ),

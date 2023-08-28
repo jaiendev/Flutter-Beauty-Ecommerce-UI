@@ -114,7 +114,7 @@ class TopTrendingCard extends StatelessWidget {
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -143,7 +143,7 @@ class TopTrendingCard extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),

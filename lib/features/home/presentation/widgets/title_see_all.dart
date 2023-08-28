@@ -62,7 +62,7 @@ class TitleSeeAll extends StatelessWidget {
                       size: 10.sp,
                     ),
                   ],
-                )
+                ),
         ],
       ),
     );
