@@ -40,6 +40,7 @@ class AssetsIconImage {
   static const String icLotion = 'assets/icons/ic_lotion.png';
   static const String icWallet = 'assets/icons/ic_wallet.png';
   static const String icShoppingBag = 'assets/icons/ic_shopping_bag.png';
+  static const String icLoading = 'assets/icons/ic_loading.gif';
 
   // Profile Screen
   static const String icMyOrder = 'assets/icons/ic_my_order.png';

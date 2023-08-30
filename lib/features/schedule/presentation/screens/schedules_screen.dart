@@ -1,78 +1,62 @@
 import 'package:flutter/material.dart';
-import 'package:lotus_application/core/app/constants/app_colors.dart';
-import 'package:lotus_application/features/home/presentation/widgets/button_have_badges.dart';
-import 'package:phosphor_flutter/phosphor_flutter.dart';
+import 'package:lotus_application/core/app/constants/constants.dart';
+import 'package:lotus_application/core/utils/app_bar/app_bar_none.dart';
+import 'package:lotus_application/features/profile/presentation/widgets/calendar_widget.dart';
+import 'package:lotus_application/features/schedule/data/models/time_line_model.dart';
+import 'package:lotus_application/features/schedule/presentation/widgets/app_bar_schedule.dart';
+import 'package:lotus_application/features/schedule/presentation/widgets/time_line_card.dart';
 import 'package:sizer/sizer.dart';
 
-class SchedulesScreen extends StatelessWidget {
+class SchedulesScreen extends StatefulWidget {
   const SchedulesScreen({super.key});
 
   @override
+  State<SchedulesScreen> createState() => _SchedulesScreenState();
+}
+
+class _SchedulesScreenState extends State<SchedulesScreen> {
+  DateTime _seletedDate = DateTime.now();
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Text(
-          'Schedules',
-          style: TextStyle(
-            color: colorPrimary2,
-            fontSize: 13.sp,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-        elevation: 0.5.sp,
-        actions: [
-          ButtonHaveBadges(
-            icon: PhosphorIcons.light.bellSimpleRinging,
-            badges: 5,
-            onTap: () {},
-            margin: EdgeInsets.only(top: 9.sp, right: 7.sp),
-          ),
-        ],
+      extendBodyBehindAppBar: true,
+      appBar: appBarNone(
+        context: context,
+        brightness: Brightness.light,
+        backgroundColor: Colors.transparent,
       ),
-      body: Column(
-        children: [
-          SizedBox(height: 12.sp),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 12.sp),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                _buttonNextPreviousMonth(icon: PhosphorIcons.light.caretLeft),
-                Text(
-                  'August 2023',
-                  style: TextStyle(
-                    color: colorPrimary2,
-                    fontSize: 11.sp,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                _buttonNextPreviousMonth(icon: PhosphorIcons.light.caretRight),
-              ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            const AppBarSchedules(),
+            SizedBox(height: 18.sp),
+            CalendarWidget(
+              seletedDate: _seletedDate,
+              onChangeDate: (date) {
+                setState(() {
+                  _seletedDate = date;
+                });
+              },
             ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buttonNextPreviousMonth({
-    required IconData icon,
-  }) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.transparent,
-        border: Border.all(
-          width: 0.7.sp,
-          color: colorPrimary2,
+            SizedBox(height: 15.sp),
+            dividerChatBig,
+            Expanded(
+              child: ListView.builder(
+                physics: const BouncingScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: timeLineFake.length,
+                padding: EdgeInsets.symmetric(vertical: 13.sp),
+                itemBuilder: (context, index) {
+                  return TimelineCard(
+                    timelineModel: timeLineFake[index],
+                    isTimelinePresent: timeLineFake[index].getTimelinePresent,
+                    isCheckLast: index == timeLineFake.length - 1,
+                  );
+                },
+              ),
+            ),
+          ],
         ),
-        shape: BoxShape.circle,
-      ),
-      padding: EdgeInsets.all(6.sp),
-      child: Icon(
-        icon,
-        color: colorPrimary2,
-        size: 12.sp,
       ),
     );
   }

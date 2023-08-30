@@ -7,12 +7,14 @@ class IconTextMini extends StatelessWidget {
   final IconData icon;
   final Color? color;
   final double? fontSize;
+  final double? sizeIcon;
   const IconTextMini({
     super.key,
     required this.icon,
     required this.description,
     this.color,
     this.fontSize,
+    this.sizeIcon,
   });
 
   @override
@@ -22,7 +24,7 @@ class IconTextMini extends StatelessWidget {
         Icon(
           icon,
           color: color ?? colorPrimary2,
-          size: fontSize == null ? 10.sp : (fontSize! + 2.sp),
+          size: sizeIcon ?? (fontSize == null ? 10.sp : (fontSize! + 2.sp)),
         ),
         SizedBox(width: 2.sp),
         Text(

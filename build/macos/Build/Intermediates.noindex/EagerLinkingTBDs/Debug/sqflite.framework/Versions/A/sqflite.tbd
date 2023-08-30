@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-macos ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/sqflite.framework/Versions/A/sqflite'
+exports:
+  - targets:         [ arm64-macos ]
+    symbols:         [ _SqfliteErrorBadParam, _SqfliteMethodExecute, _SqfliteMethodInsert, 
+                       _SqfliteMethodQuery, _SqfliteMethodUpdate, _SqfliteParamContinueOnError, 
+                       _SqfliteParamError, _SqfliteParamErrorCode, _SqfliteParamErrorData, 
+                       _SqfliteParamErrorMessage, _SqfliteParamInTransactionChange, 
+                       _SqfliteParamMethod, _SqfliteParamNoResult, _SqfliteParamResult, 
+                       _SqfliteParamSql, _SqfliteParamSqlArguments, _SqfliteParamTransactionId, 
+                       _SqfliteSqlPragmaSqliteDefensiveOff, _SqliteErrorCode, _sqfliteHasSqlLogLevel, 
+                       _sqfliteHasVerboseLogLevel, _sqfliteVersionNumber, _sqfliteVersionString ]
+    objc-classes:    [ PodsDummy_sqflite, SqfliteBatchOperation, SqfliteCursor, SqfliteDatabase, 
+                       SqfliteMethodCallOperation, SqfliteOperation, SqflitePlugin, 
+                       SqfliteQueuedOperation ]
+...

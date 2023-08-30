@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-macos ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/FMDB.framework/Versions/A/FMDB'
+exports:
+  - targets:         [ arm64-macos ]
+    symbols:         [ _FMDBBlockSQLiteCallBackFunction, _FMDBExecuteBulkSQLCallback, 
+                       _FMDBVersionNumber, _FMDBVersionString ]
+    objc-classes:    [ FMDatabase, FMDatabasePool, FMDatabaseQueue, FMResultSet, 
+                       FMStatement, PodsDummy_FMDB ]
+    objc-ivars:      [ FMStatement._inUse, FMStatement._query, FMStatement._statement, 
+                       FMStatement._useCount ]
+...

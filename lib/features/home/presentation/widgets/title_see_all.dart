@@ -52,7 +52,7 @@ class TitleSeeAll extends StatelessWidget {
                       'See all',
                       style: TextStyle(
                         color: colorPrimary2,
-                        fontSize: 9.sp,
+                        fontSize: 11.sp,
                       ),
                     ),
                     SizedBox(width: 3.sp),

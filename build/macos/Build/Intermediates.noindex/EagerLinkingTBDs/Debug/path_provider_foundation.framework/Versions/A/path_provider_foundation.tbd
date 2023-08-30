@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-macos ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/path_provider_foundation.framework/Versions/A/path_provider_foundation'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-macos ]
+    symbols:         [ '_$s24path_provider_foundation13DirectoryTypeO8rawValueACSgSi_tcfC', 
+                       '_$s24path_provider_foundation13DirectoryTypeO8rawValueSivg', 
+                       '_$s24path_provider_foundation13DirectoryTypeO8rawValueSivpMV', 
+                       '_$s24path_provider_foundation13DirectoryTypeOMa', '_$s24path_provider_foundation13DirectoryTypeOMn', 
+                       '_$s24path_provider_foundation13DirectoryTypeON', '_$s24path_provider_foundation13DirectoryTypeOSHAAMc', 
+                       '_$s24path_provider_foundation13DirectoryTypeOSQAAMc', '_$s24path_provider_foundation13DirectoryTypeOSYAAMc', 
+                       '_$s24path_provider_foundation15PathProviderApiMp', '_$s24path_provider_foundation15PathProviderApiTL', 
+                       '_$s24path_provider_foundation18PathProviderPluginC012getContainerD018appGroupIdentifierSSSgSS_tF', 
+                       '_$s24path_provider_foundation18PathProviderPluginC012getContainerD018appGroupIdentifierSSSgSS_tFTq', 
+                       '_$s24path_provider_foundation18PathProviderPluginC012getDirectoryD04typeSSSgAA0H4TypeO_tF', 
+                       '_$s24path_provider_foundation18PathProviderPluginC012getDirectoryD04typeSSSgAA0H4TypeO_tFTq', 
+                       '_$s24path_provider_foundation18PathProviderPluginC8register4withySo07FlutterF9Registrar_p_tFZ', 
+                       '_$s24path_provider_foundation18PathProviderPluginCAA0dE3ApiAAMc', 
+                       '_$s24path_provider_foundation18PathProviderPluginCAA0dE3ApiAAWP', 
+                       '_$s24path_provider_foundation18PathProviderPluginCACycfC', 
+                       '_$s24path_provider_foundation18PathProviderPluginCACycfc', 
+                       '_$s24path_provider_foundation18PathProviderPluginCMa', '_$s24path_provider_foundation18PathProviderPluginCMn', 
+                       '_$s24path_provider_foundation18PathProviderPluginCN', '_$s24path_provider_foundation18PathProviderPluginCfD', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupC5setUp15binaryMessenger3apiySo013FlutterBinaryK0_p_AA0deF0_pSgtFZ', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupCACycfC', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupCACycfCTq', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupCACycfc', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupCMa', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupCMm', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupCMn', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupCN', '_$s24path_provider_foundation20PathProviderApiSetupCfD', 
+                       '_$s24path_provider_foundation20PathProviderApiSetupCfd', 
+                       _path_provider_foundationVersionNumber, _path_provider_foundationVersionString ]
+    objc-classes:    [ PodsDummy_path_provider_foundation, _TtC24path_provider_foundation18PathProviderPlugin ]
+...

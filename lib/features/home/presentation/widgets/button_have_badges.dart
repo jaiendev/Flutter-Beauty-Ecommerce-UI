@@ -33,8 +33,8 @@ class ButtonHaveBadges extends StatelessWidget {
             Positioned(
               right: 2.sp,
               child: Container(
-                width: 10.sp,
-                height: 10.sp,
+                width: 11.sp,
+                height: 11.sp,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -44,7 +44,7 @@ class ButtonHaveBadges extends StatelessWidget {
                   badges > 9 ? '9+' : badges.toString(),
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 5.sp,
+                    fontSize: 6.sp,
                   ),
                 ),
               ),
