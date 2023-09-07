@@ -23,7 +23,7 @@ class TimelineCard extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(
         horizontal: 16.sp,
-      ).add(EdgeInsets.only(bottom: 15.sp)),
+      ).add(EdgeInsets.only(bottom: 8.sp)),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -62,7 +62,7 @@ class TimelineCard extends StatelessWidget {
                   visible: !isCheckLast,
                   child: Container(
                     width: isTimelinePresent ? 1.2.sp : 0.7.sp,
-                    height: isTimelinePresent ? 110.sp : 40.sp,
+                    height: isTimelinePresent ? 140.sp : 60.sp,
                     color: colorPrimary2,
                   ),
                 ),
