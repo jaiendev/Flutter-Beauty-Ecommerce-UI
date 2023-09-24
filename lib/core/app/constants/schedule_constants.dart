@@ -130,3 +130,14 @@ List<List<DateTime>> getCalendarThisMonth({DateTime? dateTime}) {
 
   return thisMonthList;
 }
+
+
+List<String> dateFullNameOfWeeks = [
+  'Monday',
+  'Tueday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+];

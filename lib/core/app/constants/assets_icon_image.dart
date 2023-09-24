@@ -7,6 +7,10 @@ class AssetsIconImage {
 
   // Branches
   static const String avatarUser = 'assets/images/img_avatar_user.png';
+  static const String avatarUser1 = 'assets/images/img_avatar_user_1.png';
+  static const String avatarUser2 = 'assets/images/img_avatar_user_2.png';
+  static const String avatarUser3 = 'assets/images/img_avatar_user_3.png';
+  static const String avatarUser4 = 'assets/images/img_avatar_user_4.png';
   static const String imgClimique = 'assets/images/img_climique_logo.png';
   static const String imgInnisfree = 'assets/images/img_innisfree_logo.png';
   static const String imgLoreal = 'assets/images/img_loreal_logo.png';
