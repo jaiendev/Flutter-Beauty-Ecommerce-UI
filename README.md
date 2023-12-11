@@ -6,14 +6,14 @@ Bosue UI is a Flutter app with a beautiful and intuitive user interface. The app
 
 ## Screenshots
 
-# Authenication Screen (Login, Register)
+### Authenication Screen (Login, Register)
 <p>
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/09e96ec8-4910-44a0-94cc-f1c271226d73" width="200px"/>
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/c29e7197-0ff4-4446-a530-a7d19ff772e1" width="200px"/>
 </p>
 
 
-# Home Screen
+### Home Screen
 <p>
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/a099ee66-bf55-45e5-a094-a6ad4fed4b13" width="200px"/>
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/d568336c-6593-4bbc-8131-e30383f10a1c" width="200px"/>
@@ -22,7 +22,7 @@ Bosue UI is a Flutter app with a beautiful and intuitive user interface. The app
 </p>
 
 
-# Schedule Screen, Chat Screen, Profile Screen
+### Schedule Screen, Chat Screen, Profile Screen
 <p>
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/c4773ef2-b432-4bc6-8916-fa3d1ae3fa54" width="200px"/>
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/42840d69-d91a-44eb-8b18-a7db611e9030" width="200px"/>
