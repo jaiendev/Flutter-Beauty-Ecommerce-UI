@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/FlutterChannels.h</key>
 		<data>
-		bhEGVRctQGJxYtCb3asK0k4Iq74=
+		kk9YCchXApX3mGBMk6LGcCNaH1g=
 		</data>
 		<key>Headers/FlutterCodecs.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/FlutterPlugin.h</key>
 		<data>
-		EPrA0Ggvn83vzoNUoJ1lETKIEGg=
+		s6183bDVVo6Dhe3jTvu6Lxr0Qj0=
 		</data>
 		<key>Headers/FlutterPluginAppLifeCycleDelegate.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bN+HIXYuNqvk6swaMs4bi3yVVQ0=
+		0GnJAIdPKLsHIVIgCB46/39Yos8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>icudtl.dat</key>
 		<data>
-		nMTZkkm9uooDDa8A2YJSyK73oP8=
+		Ubat0LvE4LUgCwHeyl0Anx2vnzk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -115,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IAJwMIrTpwHKIiP2tBsYBUQe8B8qT6nLVEQzZLi+yFc=
+			DiCjzJtPXXO1x7uREO3UusxUMr++I+7wucfuPcuy9YE=
 			</data>
 		</dict>
 		<key>Headers/FlutterCodecs.h</key>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zRjDCQ3ULUe9Pf2BcmGjO5/rdI00/Siw5fnIQZsJjMI=
+			letSh4jQvg70UeTZ+wjzYDOxUtryqDuNfxc0A8zgy58=
 			</data>
 		</dict>
 		<key>Headers/FlutterPluginAppLifeCycleDelegate.h</key>
@@ -206,7 +206,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rETMw/Yb9jC7IPuAQ9hs/kyJldBrRgCEQA20XXBJezA=
+			ZepykIMSjfzhwAcmupMrkaqvXkhza1ZE3TdHjl8odaw=
 			</data>
 		</dict>
 	</dict>

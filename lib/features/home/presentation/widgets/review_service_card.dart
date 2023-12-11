@@ -81,7 +81,7 @@ class ReviewServiceCard extends StatelessWidget {
               ),
               SizedBox(height: 10.sp),
               Container(
-                height: 46.sp,
+                height: 50.sp,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(4.sp),

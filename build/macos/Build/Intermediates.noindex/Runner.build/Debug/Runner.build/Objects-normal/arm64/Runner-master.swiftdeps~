@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
-options: "e31e3c84cd804a7ea4433b38ec64445e29b9d227898812e3bdb4f7427d1f6402"
-build_start_time: [1693231561, 414224000]
-build_end_time: [1693231561, 445447000]
-inputs:
-  "/Users/waodatewaodate/Documents/lotus_application/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1693231540, 711102599]
-  "/Users/waodatewaodate/Documents/lotus_application/macos/Runner/AppDelegate.swift": !private [1657694332, 0]
-  "/Users/waodatewaodate/Documents/lotus_application/macos/Runner/MainFlutterWindow.swift": !private [1683788789, 480125125]

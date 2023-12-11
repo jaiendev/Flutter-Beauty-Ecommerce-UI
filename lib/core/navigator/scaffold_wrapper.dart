@@ -1,5 +1,4 @@
 // Dart imports:
-import 'dart:async';
 import 'dart:io';
 
 // Flutter imports:
@@ -54,8 +53,7 @@ class _ScaffoldWrapperState extends State<ScaffoldWrapper>
           bottom: false,
           child: Platform.isIOS
               ? _child
-              : WillPopScope(
-                  onWillPop: _goBackward,
+              : PopScope(
                   child: _child,
                 ),
         );
@@ -86,20 +84,12 @@ class _ScaffoldWrapperState extends State<ScaffoldWrapper>
                     const int sensitivity = 15;
 
                     if (details.delta.dx > sensitivity) {
-                      //SWIPE FROM RIGHT DETECTION
-                      final bool canBackward = await _goBackward();
-                      if (canBackward) {
-                        NavigatorPages.pop();
-                      }
+                      NavigatorPages.pop();
                     }
                   }
                 },
       onTap: () => _hideKeyboard(),
       child: widget.child,
     );
-  }
-
-  Future<bool> _goBackward() async {
-    return true;
   }
 }

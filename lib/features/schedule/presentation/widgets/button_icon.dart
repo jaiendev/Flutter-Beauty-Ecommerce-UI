@@ -6,25 +6,30 @@ class ButtonIcon extends StatelessWidget {
   final IconData icon;
   final Color? backgroundColor;
   final Color? colorIcon;
+  final Function()? onTap;
   const ButtonIcon({
     super.key,
     required this.icon,
     this.backgroundColor,
     this.colorIcon,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: backgroundColor ?? colorPrimary,
-      ),
-      padding: EdgeInsets.all(8.sp),
-      child: Icon(
-        icon,
-        size: 16.sp,
-        color: colorIcon ?? colorPrimary2,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: backgroundColor ?? colorPrimary,
+        ),
+        padding: EdgeInsets.all(8.sp),
+        child: Icon(
+          icon,
+          size: 16.sp,
+          color: colorIcon ?? colorPrimary2,
+        ),
       ),
     );
   }

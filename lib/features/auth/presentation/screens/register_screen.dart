@@ -21,7 +21,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Padding(
       padding: EdgeInsets.symmetric(
         horizontal: 12.sp,
-        vertical: 20.sp,
+      ).add(
+        EdgeInsets.only(
+          top: 20.sp,
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

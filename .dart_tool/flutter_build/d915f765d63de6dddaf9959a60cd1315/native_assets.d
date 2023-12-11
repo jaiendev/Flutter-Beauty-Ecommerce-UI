@@ -1,0 +1,1 @@
+ /Users/waodatewaodate/Documents/Bosue/.dart_tool/flutter_build/d915f765d63de6dddaf9959a60cd1315/native_assets.yaml: 

@@ -147,7 +147,7 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/collection-1.17.2",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -257,7 +257,7 @@
       "name": "flutter",
       "rootUri": "file:///Users/waodatewaodate/Downloads/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "flutter_bloc",
@@ -293,13 +293,13 @@
       "name": "flutter_test",
       "rootUri": "file:///Users/waodatewaodate/Downloads/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/waodatewaodate/Downloads/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "frontend_server_client",
@@ -435,7 +435,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/meta-1.9.1",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/meta-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -593,7 +593,7 @@
       "name": "sky_engine",
       "rootUri": "file:///Users/waodatewaodate/Downloads/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "source_gen",
@@ -621,15 +621,15 @@
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/stack_trace-1.11.0",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/stack_trace-1.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "stream_channel",
-      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/stream_channel-2.1.1",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/stream_channel-2.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.19"
     },
     {
       "name": "stream_transform",
@@ -663,9 +663,9 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/test_api-0.6.0",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/test_api-0.6.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.0"
     },
     {
       "name": "timing",
@@ -705,9 +705,9 @@
     },
     {
       "name": "web",
-      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/web-0.1.4-beta",
+      "rootUri": "file:///Users/waodatewaodate/.pub-cache/hosted/pub.dev/web-0.3.0",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "web_socket_channel",
@@ -746,7 +746,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-08-20T16:21:33.454256Z",
+  "generated": "2023-12-11T16:25:24.832057Z",
   "generator": "pub",
-  "generatorVersion": "3.1.0"
+  "generatorVersion": "3.2.0"
 }

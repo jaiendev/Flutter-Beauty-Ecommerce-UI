@@ -30,7 +30,7 @@ class FeaturingProduct extends StatelessWidget {
         ),
         SizedBox(height: 5.sp),
         SizedBox(
-          height: 230.sp,
+          height: 240.sp,
           child: ListView.builder(
             shrinkWrap: true,
             itemCount: 5,

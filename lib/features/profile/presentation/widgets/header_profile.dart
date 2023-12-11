@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lotus_application/core/app/constants/app_colors.dart';
 import 'package:lotus_application/core/app/constants/assets_icon_image.dart';
+import 'package:lotus_application/core/navigator/pages.dart';
+import 'package:lotus_application/core/navigator/routes.dart';
 import 'package:lotus_application/features/schedule/presentation/widgets/button_icon.dart';
 import 'package:lotus_application/features/schedule/presentation/widgets/glass_morphic.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -117,6 +119,9 @@ class HeaderProfile extends StatelessWidget {
                   ButtonIcon(icon: PhosphorIcons.light.bellSimpleRinging),
                   SizedBox(width: 10.sp),
                   ButtonIcon(
+                    onTap: () {
+                      NavigatorPages.popUntil(Routes.authenication);
+                    },
                     icon: PhosphorIcons.light.signOut,
                     colorIcon: Colors.red,
                   ),

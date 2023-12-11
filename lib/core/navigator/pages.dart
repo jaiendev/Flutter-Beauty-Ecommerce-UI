@@ -5,21 +5,25 @@ import 'package:lotus_application/core/navigator/app_navigator.dart';
 import 'package:lotus_application/core/navigator/routes.dart';
 import 'package:lotus_application/core/navigator/scaffold_wrapper.dart';
 import 'package:lotus_application/core/navigator/transition_routes.dart';
+import 'package:lotus_application/features/auth/presentation/screens/authenication_screen.dart';
 import 'package:lotus_application/features/home/presentation/screens/home.dart';
 
 // Project imports:
 
 class NavigatorPages extends RouteObserver<PageRoute<dynamic>> {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey();
-  static GlobalKey<NavigatorState> navigatorAccountKey = GlobalKey();
 
   Route<dynamic> getRoute(RouteSettings settings) {
-    // Map<String, dynamic>? arguments = _getArguments(settings);
     switch (settings.name) {
       case Routes.root:
         return _buildRoute(
           settings,
           const Home(),
+        );
+      case Routes.authenication:
+        return _buildRoute(
+          settings,
+          const AuthenicationScreen(),
         );
       default:
         return _buildRoute(
@@ -88,33 +92,13 @@ class NavigatorPages extends RouteObserver<PageRoute<dynamic>> {
     state.pop();
   }
 
-  static void navigatorAccountPop() {
-    if (!canAccountPop) return;
-
-    accountState?.pop();
-  }
-
-  // _getArguments(RouteSettings settings) {
-  //   return settings.arguments;
-  // }
-
-  static void navigatorAccountPopToRoot() {
-    accountState?.popUntil((route) => route.isFirst);
-  }
-
   static bool get canPop => state.canPop();
-
-  static bool get canAccountPop => accountState?.canPop() ?? true;
 
   static String? currentRoute() => AppNavigator.currentRouteName;
 
   static BuildContext? get context => navigatorKey.currentContext;
 
-  static BuildContext? get accountContext => navigatorAccountKey.currentContext;
-
   static NavigatorState get state => navigatorKey.currentState!;
-
-  static NavigatorState? get accountState => navigatorAccountKey.currentState;
 
   static bool getRouteTablet(String route) => [].contains(route);
 

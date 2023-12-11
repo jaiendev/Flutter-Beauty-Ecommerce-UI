@@ -82,7 +82,7 @@ class _AuthenicationScreenState extends State<AuthenicationScreen> {
           ),
           Container(
             width: double.infinity,
-            padding: EdgeInsets.symmetric(horizontal: 12.sp, vertical: 28.sp),
+            padding: EdgeInsets.symmetric(horizontal: 12.sp, vertical: 18.sp),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

@@ -30,7 +30,7 @@ class ReviewService extends StatelessWidget {
         ),
         SizedBox(height: 10.sp),
         SizedBox(
-          height: 115.sp,
+          height: 125.sp,
           child: ListView.builder(
             shrinkWrap: true,
             itemCount: 5,
