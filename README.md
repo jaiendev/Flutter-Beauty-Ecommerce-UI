@@ -1,6 +1,6 @@
 # Bosue - UI Beauty Ecommerce App using Flutter 🌷͙֒🌷͙֒🌷͙֒
 
-<img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/c2eb2eb6-e6c2-477f-a9ef-51f31ebe6c2a" width="160px" height=auto align="right" alt="Computador"/>
+<img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/c2eb2eb6-e6c2-477f-a9ef-51f31ebe6c2a" width="160px" height=auto align="right" alt="Computador" border-radius="20px"/>
 
 StreamOS UI is a Flutter application with a sleek and intuitive user interface. The app features a robust login system, which allows users to sign in using their Google or Apple accounts via Firebase.
 
