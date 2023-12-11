@@ -1,16 +1,44 @@
-# lotus_application
+# Bosue - UI Beauty Ecommerce App using Flutter 🌷͙֒🌷͙֒🌷͙֒
 
-A new Flutter project.
+<img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/c2eb2eb6-e6c2-477f-a9ef-51f31ebe6c2a" width="160px" height=auto align="right" alt="Computador"/>
+
+StreamOS UI is a Flutter application with a sleek and intuitive user interface. The app features a robust login system, which allows users to sign in using their Google or Apple accounts via Firebase.
+
+The app has been built using Test-Driven Development (TDD) approach, ensuring that the login functionality is thoroughly tested through unit tests.
+
+## Screenshots
+
+<p>
+<img src="https://github.com/lambiengcode/flutter-live-stream-ui/blob/dev/screenshots/photo_0.jpg?raw=true" width="200px"/>
+<img src="https://github.com/lambiengcode/flutter-live-stream-ui/blob/dev/screenshots/photo_1.jpeg?raw=true" width="200px"/>
+<img src="https://github.com/lambiengcode/flutter-live-stream-ui/blob/dev/screenshots/photo_2.jpeg?raw=true" width="200px"/>
+<img src="https://github.com/lambiengcode/flutter-live-stream-ui/blob/dev/screenshots/photo_3.jpeg?raw=true" width="200px"/>
+</p>
+<p>
+<img src="https://github.com/lambiengcode/flutter-live-stream-ui/blob/dev/screenshots/photo_4.jpeg?raw=true" width="200px"/>
+<img src="https://github.com/lambiengcode/flutter-live-stream-ui/blob/dev/screenshots/photo_5.jpeg?raw=true" width="200px"/>
+<img src="https://github.com/lambiengcode/flutter-live-stream-ui/blob/dev/screenshots/photo_6.jpeg?raw=true" width="200px"/>
+<img src="https://github.com/lambiengcode/flutter-live-stream-ui/blob/dev/screenshots/photo_7.jpeg?raw=true" width="200px"/>
+</p>
+
+## Features
+
+- Intuitive user interface
+- Login with Google/Apple using Firebase
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with StreamOS UI, follow the instructions below.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
+- Flutter
+- Firebase account
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
+1. Clone the repository: `git clone https://github.com/lambiengcode/flutter-live-stream-ui.git`
+2. Install dependencies: `flutter pub get`
+3. Run the app: `flutter run`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Conclusion
+
+StreamOS UI is a sleek and intuitive Flutter application with a robust login system. The app's login functionality has been implemented using Firebase, ensuring a secure and seamless user experience.
