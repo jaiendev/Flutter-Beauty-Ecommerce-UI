@@ -18,7 +18,7 @@ Bosue UI is a Flutter app with a beautiful and intuitive user interface. The app
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/a099ee66-bf55-45e5-a094-a6ad4fed4b13" width="200px"/>
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/d568336c-6593-4bbc-8131-e30383f10a1c" width="200px"/>
 <img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/1d3400a8-2ef0-45ae-b39c-7fe1e1017b25" width="200px"/>
-<img src="(https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/ded61f75-7303-44ae-abd7-f64a18a5974e" width="200px"/>
+<img src="https://github.com/jaiendev/Flutter-Beauty-Ecommerce/assets/67283275/ded61f75-7303-44ae-abd7-f64a18a5974e" width="200px"/>
 </p>
 
 
